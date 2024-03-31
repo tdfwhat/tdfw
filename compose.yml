@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  web:
+    image: node:21.7-alpine
+    tty: true
+    working_dir: /workspace
+    env_file: .env
+    ports:
+      - "5173:5173"
+    command: sleep infinity
+    # command: yarn dev
+    volumes:
+      - ./web:/workspace:cached
+  cms:
+    image: node:21.7-alpine
+    tty: true
+    working_dir: /workspace
+    ports:
+      - "4321:4321"
+      - "3333:3333"
+    command: sleep infinity
+    volumes:
+      - ./cms:/workspace:cached
+

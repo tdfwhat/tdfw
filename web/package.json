@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "deploy:draft": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
