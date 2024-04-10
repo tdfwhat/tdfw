@@ -15,7 +15,6 @@
     "sanity"
   ],
   "dependencies": {
-    "sanity": "^3.36.2",
     "@sanity/vision": "^3.36.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -37,4 +36,3 @@
     "singleQuote": true
   }
 }
-

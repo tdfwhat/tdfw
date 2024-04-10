@@ -1,16 +1,30 @@
 {
-  "name": "workspace",
+  "name": "web",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "web",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview --host",
-    "deploy:draft": "netlify deploy",
-    "deploy:prod": "netlify deploy --prod"
+    "develop": "gatsby develop --host 0.0.0.0",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve --host 0.0.0.0",
+    "clean": "gatsby clean"
   },
-  "devDependencies": {
-    "vite": "^5.2.0"
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-source-sanity": "^7.9.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.3"
   }
 }

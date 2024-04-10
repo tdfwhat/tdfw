@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "copy": "node scripts/copy-media.js",
+    "copy:build": "yarn copy && yarn build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "@sanity/client": "^6.15.11",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.6.8",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  },
+  "packageManager": "yarn@4.1.1"
+}
