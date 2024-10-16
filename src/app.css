@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  h1 {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  }
+
+  body {
+    @apply text-slate-900 antialiased break-words
+  }
+
+  h1 {
+    @apply font-semibold leading-9 text-4xl
+  }
+
+  p {
+    @apply text-sm leading-5
+  }
+
+  a {
+    @apply transition-opacity duration-500
+  }
+
+  a:hover {
+    @apply opacity-50 transition-opacity duration-500
+  }
+}
